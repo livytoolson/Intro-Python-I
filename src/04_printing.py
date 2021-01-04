@@ -11,7 +11,13 @@ z = "I like turtles!"
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
+# d is decimal, .2f is float rounded to 2 decimals, s is string
+# order matters !
+print("x is %d, y is %.2f, z is '%s'" %(x, y, z))
 
 # Use the 'format' string method to print the same thing
+print("x is {}, y is {}, z is '{}'" .format(x, '%.2f'%y, z))
 
 # Finally, print the same thing using an f-string
+# will mostly be using f-strings, but know the other versions as well
+print(f'x is {x}, y is {"%.2f"%y}, z is "{z}"')
